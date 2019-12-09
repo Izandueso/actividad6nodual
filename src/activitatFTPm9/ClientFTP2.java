@@ -12,7 +12,8 @@ public class ClientFTP2 {
 		
 		//Servidor FTP
 		FTPClient client = new FTPClient();
-		String ServerFTP = "ftp.urv.es";
+		System.out.println("Introduce el servidor FTP: exemple ->  ftp.urv.es ");
+		String ServerFTP = teclado.nextLine();
 		System.out.println("Ens connectem al servidor: "+ServerFTP);
 		
 		//Usuari FTP
