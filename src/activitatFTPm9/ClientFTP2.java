@@ -15,10 +15,13 @@ public class ClientFTP2 {
 		System.out.println("Introduce el servidor FTP: exemple ->  ftp.urv.es ");
 		String ServerFTP = teclado.nextLine();
 		System.out.println("Ens connectem al servidor: "+ServerFTP);
-		
+			
 		//Usuari FTP
-		String usuari = "anonymous";
-		String contrasenya = "guest";
+		System.out.println("Introdueix usuari: Exemple -> anonymous");
+		String usuari = teclado.next();
+		
+		System.out.println("Introdueix contrasenya: Exemple -> guest");
+		String contrasenya = teclado.next();
 		
 		try {
 			
